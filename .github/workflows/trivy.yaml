@@ -2,6 +2,9 @@ name: Upload Github submissions
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   trivy-run:
     runs-on: ubuntu-latest
