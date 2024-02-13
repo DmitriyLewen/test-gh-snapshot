@@ -1,0 +1,1366 @@
+{
+  "version": 0,
+  "detector": {
+    "name": "trivy",
+    "version": "0.49.1",
+    "url": "https://github.com/aquasecurity/trivy"
+  },
+  "metadata": {
+    "aquasecurity:trivy:RepoDigest": "tomcat@sha256:5e95c2e2b75387025bfc0da1e421079ac2b84378efeb70d0b2d54e4fae5832b4",
+    "aquasecurity:trivy:RepoTag": "tomcat:latest"
+  },
+  "job": {
+    "correlator": "_"
+  },
+  "scanned": "2024-02-13T14:10:25+06:00",
+  "manifests": {
+    "Java": {
+      "name": "jar",
+      "file": {
+        "source_location": "Java"
+      },
+      "resolved": {
+        "commons-daemon:commons-daemon": {
+          "package_url": "pkg:maven/commons-daemon/commons-daemon@1.3.4",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.taglibs:taglibs-standard-impl": {
+          "package_url": "pkg:maven/org.apache.taglibs/taglibs-standard-impl@1.2.5",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.taglibs:taglibs-standard-spec": {
+          "package_url": "pkg:maven/org.apache.taglibs/taglibs-standard-spec@1.2.5",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:jakartaee-migration": {
+          "package_url": "pkg:maven/org.apache.tomcat/jakartaee-migration@1.0.7",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-annotations-api": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-annotations-api@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-api": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-api@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-catalina": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-catalina@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-catalina-ant": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-catalina-ant@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-catalina-ha": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-catalina-ha@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-coyote": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-coyote@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-dbcp": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-dbcp@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-el-api": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-el-api@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-i18n-cs": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-i18n-cs@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-i18n-de": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-i18n-de@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-i18n-es": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-i18n-es@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-i18n-fr": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-i18n-fr@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-i18n-ja": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-i18n-ja@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-i18n-ko": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-i18n-ko@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-i18n-pt-BR": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-i18n-pt-BR@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-i18n-ru": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-i18n-ru@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-i18n-zh-CN": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-i18n-zh-CN@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-jasper": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-jasper@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-jasper-el": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-jasper-el@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-jaspic-api": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-jaspic-api@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-jdbc": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-jdbc@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-jni": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-jni@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-jsp-api": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-jsp-api@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-juli": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-juli@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-servlet-api": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-servlet-api@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-ssi": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-ssi@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-storeconfig": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-storeconfig@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-tribes": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-tribes@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-util": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-util@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-util-scan": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-util-scan@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-websocket": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-websocket@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-websocket-api": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-websocket-api@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "org.apache.tomcat:tomcat-websocket-client-api": {
+          "package_url": "pkg:maven/org.apache.tomcat/tomcat-websocket-client-api@10.1.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "tomcat (ubuntu 22.04)": {
+      "name": "ubuntu",
+      "resolved": {
+        "adduser": {
+          "package_url": "pkg:deb/ubuntu/adduser@3.118ubuntu5?arch=all\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "debconf@1.5.79ubuntu1",
+            "passwd@1:4.8.1-2ubuntu2.1"
+          ],
+          "scope": "runtime"
+        },
+        "apt": {
+          "package_url": "pkg:deb/ubuntu/apt@2.4.11?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "adduser@3.118ubuntu5",
+            "gpgv@2.2.27-3ubuntu2.1",
+            "libapt-pkg6.0@2.4.11",
+            "libc6@2.35-0ubuntu3.6",
+            "libgcc-s1@12.3.0-1ubuntu1~22.04",
+            "libgnutls30@3.7.3-4ubuntu1.4",
+            "libseccomp2@2.5.3-2ubuntu2",
+            "libstdc++6@12.3.0-1ubuntu1~22.04",
+            "libsystemd0@249.11-0ubuntu3.12",
+            "ubuntu-keyring@2021.03.26"
+          ],
+          "scope": "runtime"
+        },
+        "base-files": {
+          "package_url": "pkg:deb/ubuntu/base-files@12ubuntu4.5?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libcrypt1@1:4.4.27-1"
+          ],
+          "scope": "runtime"
+        },
+        "base-passwd": {
+          "package_url": "pkg:deb/ubuntu/base-passwd@3.5.52build1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libdebconfclient0@0.261ubuntu1"
+          ],
+          "scope": "runtime"
+        },
+        "bash": {
+          "package_url": "pkg:deb/ubuntu/bash@5.1-6ubuntu1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "base-files@12ubuntu4.5",
+            "debianutils@5.5-1ubuntu2"
+          ],
+          "scope": "runtime"
+        },
+        "binutils": {
+          "package_url": "pkg:deb/ubuntu/binutils@2.38-4ubuntu2.5?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "binutils-common@2.38-4ubuntu2.5",
+            "binutils-x86-64-linux-gnu@2.38-4ubuntu2.5",
+            "libbinutils@2.38-4ubuntu2.5"
+          ],
+          "scope": "runtime"
+        },
+        "binutils-common": {
+          "package_url": "pkg:deb/ubuntu/binutils-common@2.38-4ubuntu2.5?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "binutils-x86-64-linux-gnu": {
+          "package_url": "pkg:deb/ubuntu/binutils-x86-64-linux-gnu@2.38-4ubuntu2.5?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "binutils-common@2.38-4ubuntu2.5",
+            "libbinutils@2.38-4ubuntu2.5",
+            "libc6@2.35-0ubuntu3.6",
+            "libctf-nobfd0@2.38-4ubuntu2.5",
+            "libctf0@2.38-4ubuntu2.5",
+            "libgcc-s1@12.3.0-1ubuntu1~22.04",
+            "zlib1g@1:1.2.11.dfsg-2ubuntu9.2"
+          ],
+          "scope": "runtime"
+        },
+        "bsdutils": {
+          "package_url": "pkg:deb/ubuntu/bsdutils@2.37.2-4ubuntu3?arch=amd64\u0026distro=ubuntu-22.04\u0026epoch=1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "ca-certificates": {
+          "package_url": "pkg:deb/ubuntu/ca-certificates@20230311ubuntu0.22.04.1?arch=all\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "debconf@1.5.79ubuntu1",
+            "openssl@3.0.2-0ubuntu1.13"
+          ],
+          "scope": "runtime"
+        },
+        "coreutils": {
+          "package_url": "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "curl": {
+          "package_url": "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.15?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libcurl4@7.81.0-1ubuntu1.15",
+            "zlib1g@1:1.2.11.dfsg-2ubuntu9.2"
+          ],
+          "scope": "runtime"
+        },
+        "dash": {
+          "package_url": "pkg:deb/ubuntu/dash@0.5.11%2Bgit20210903%2B057cd650a4ed-3build1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "debconf@1.5.79ubuntu1",
+            "debianutils@5.5-1ubuntu2",
+            "dpkg@1.21.1ubuntu2.2"
+          ],
+          "scope": "runtime"
+        },
+        "debconf": {
+          "package_url": "pkg:deb/ubuntu/debconf@1.5.79ubuntu1?arch=all\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "debianutils": {
+          "package_url": "pkg:deb/ubuntu/debianutils@5.5-1ubuntu2?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "diffutils": {
+          "package_url": "pkg:deb/ubuntu/diffutils@3.8-0ubuntu2?arch=amd64\u0026distro=ubuntu-22.04\u0026epoch=1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "dpkg": {
+          "package_url": "pkg:deb/ubuntu/dpkg@1.21.1ubuntu2.2?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "tar@1.34+dfsg-1ubuntu0.1.22.04.2"
+          ],
+          "scope": "runtime"
+        },
+        "e2fsprogs": {
+          "package_url": "pkg:deb/ubuntu/e2fsprogs@1.46.5-2ubuntu1.1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "logsave@1.46.5-2ubuntu1.1"
+          ],
+          "scope": "runtime"
+        },
+        "findutils": {
+          "package_url": "pkg:deb/ubuntu/findutils@4.8.0-1ubuntu3?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "fontconfig": {
+          "package_url": "pkg:deb/ubuntu/fontconfig@2.13.1-4.2ubuntu5?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "fontconfig-config@2.13.1-4.2ubuntu5",
+            "libc6@2.35-0ubuntu3.6",
+            "libfontconfig1@2.13.1-4.2ubuntu5",
+            "libfreetype6@2.11.1+dfsg-1ubuntu0.2"
+          ],
+          "scope": "runtime"
+        },
+        "fontconfig-config": {
+          "package_url": "pkg:deb/ubuntu/fontconfig-config@2.13.1-4.2ubuntu5?arch=all\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "fonts-dejavu-core@2.37-2build1",
+            "ucf@3.0043"
+          ],
+          "scope": "runtime"
+        },
+        "fonts-dejavu-core": {
+          "package_url": "pkg:deb/ubuntu/fonts-dejavu-core@2.37-2build1?arch=all\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "gcc-12-base": {
+          "package_url": "pkg:deb/ubuntu/gcc-12-base@12.3.0-1ubuntu1~22.04?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "gpgv": {
+          "package_url": "pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libbz2-1.0@1.0.8-5build1",
+            "libc6@2.35-0ubuntu3.6",
+            "libgcrypt20@1.9.4-3ubuntu3",
+            "libgpg-error0@1.43-3",
+            "zlib1g@1:1.2.11.dfsg-2ubuntu9.2"
+          ],
+          "scope": "runtime"
+        },
+        "grep": {
+          "package_url": "pkg:deb/ubuntu/grep@3.7-1build1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "dpkg@1.21.1ubuntu2.2"
+          ],
+          "scope": "runtime"
+        },
+        "gzip": {
+          "package_url": "pkg:deb/ubuntu/gzip@1.10-4ubuntu4.1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "dpkg@1.21.1ubuntu2.2"
+          ],
+          "scope": "runtime"
+        },
+        "hostname": {
+          "package_url": "pkg:deb/ubuntu/hostname@3.23ubuntu2?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "init-system-helpers": {
+          "package_url": "pkg:deb/ubuntu/init-system-helpers@1.62?arch=all\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "perl-base@5.34.0-3ubuntu1.3"
+          ],
+          "scope": "runtime"
+        },
+        "libacl1": {
+          "package_url": "pkg:deb/ubuntu/libacl1@2.3.1-1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libapr1": {
+          "package_url": "pkg:deb/ubuntu/libapr1@1.7.0-8ubuntu0.22.04.1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libuuid1@2.37.2-4ubuntu3"
+          ],
+          "scope": "runtime"
+        },
+        "libapt-pkg6.0": {
+          "package_url": "pkg:deb/ubuntu/libapt-pkg6.0@2.4.11?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libbz2-1.0@1.0.8-5build1",
+            "libc6@2.35-0ubuntu3.6",
+            "libgcc-s1@12.3.0-1ubuntu1~22.04",
+            "libgcrypt20@1.9.4-3ubuntu3",
+            "liblz4-1@1.9.3-2build2",
+            "liblzma5@5.2.5-2ubuntu1",
+            "libstdc++6@12.3.0-1ubuntu1~22.04",
+            "libsystemd0@249.11-0ubuntu3.12",
+            "libudev1@249.11-0ubuntu3.12",
+            "libxxhash0@0.8.1-1",
+            "libzstd1@1.4.8+dfsg-3build1",
+            "zlib1g@1:1.2.11.dfsg-2ubuntu9.2"
+          ],
+          "scope": "runtime"
+        },
+        "libattr1": {
+          "package_url": "pkg:deb/ubuntu/libattr1@2.5.1-1build1?arch=amd64\u0026distro=ubuntu-22.04\u0026epoch=1",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libaudit-common": {
+          "package_url": "pkg:deb/ubuntu/libaudit-common@3.0.7-1build1?arch=all\u0026distro=ubuntu-22.04\u0026epoch=1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "libaudit1": {
+          "package_url": "pkg:deb/ubuntu/libaudit1@3.0.7-1build1?arch=amd64\u0026distro=ubuntu-22.04\u0026epoch=1",
+          "relationship": "direct",
+          "dependencies": [
+            "libaudit-common@1:3.0.7-1build1",
+            "libc6@2.35-0ubuntu3.6",
+            "libcap-ng0@0.7.9-2.2build3"
+          ],
+          "scope": "runtime"
+        },
+        "libbinutils": {
+          "package_url": "pkg:deb/ubuntu/libbinutils@2.38-4ubuntu2.5?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "binutils-common@2.38-4ubuntu2.5",
+            "libc6@2.35-0ubuntu3.6",
+            "zlib1g@1:1.2.11.dfsg-2ubuntu9.2"
+          ],
+          "scope": "runtime"
+        },
+        "libblkid1": {
+          "package_url": "pkg:deb/ubuntu/libblkid1@2.37.2-4ubuntu3?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libbrotli1": {
+          "package_url": "pkg:deb/ubuntu/libbrotli1@1.0.9-2build6?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libbz2-1.0": {
+          "package_url": "pkg:deb/ubuntu/libbz2-1.0@1.0.8-5build1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libc-bin": {
+          "package_url": "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.6?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libc6": {
+          "package_url": "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.6?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libcrypt1@1:4.4.27-1",
+            "libgcc-s1@12.3.0-1ubuntu1~22.04"
+          ],
+          "scope": "runtime"
+        },
+        "libcap-ng0": {
+          "package_url": "pkg:deb/ubuntu/libcap-ng0@0.7.9-2.2build3?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libcap2": {
+          "package_url": "pkg:deb/ubuntu/libcap2@2.44-1ubuntu0.22.04.1?arch=amd64\u0026distro=ubuntu-22.04\u0026epoch=1",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libcom-err2": {
+          "package_url": "pkg:deb/ubuntu/libcom-err2@1.46.5-2ubuntu1.1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libcrypt1": {
+          "package_url": "pkg:deb/ubuntu/libcrypt1@4.4.27-1?arch=amd64\u0026distro=ubuntu-22.04\u0026epoch=1",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libctf-nobfd0": {
+          "package_url": "pkg:deb/ubuntu/libctf-nobfd0@2.38-4ubuntu2.5?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "zlib1g@1:1.2.11.dfsg-2ubuntu9.2"
+          ],
+          "scope": "runtime"
+        },
+        "libctf0": {
+          "package_url": "pkg:deb/ubuntu/libctf0@2.38-4ubuntu2.5?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libbinutils@2.38-4ubuntu2.5",
+            "libc6@2.35-0ubuntu3.6",
+            "zlib1g@1:1.2.11.dfsg-2ubuntu9.2"
+          ],
+          "scope": "runtime"
+        },
+        "libcurl4": {
+          "package_url": "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.15?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libbrotli1@1.0.9-2build6",
+            "libc6@2.35-0ubuntu3.6",
+            "libgssapi-krb5-2@1.19.2-2ubuntu0.3",
+            "libidn2-0@2.3.2-2build1",
+            "libldap-2.5-0@2.5.16+dfsg-0ubuntu0.22.04.2",
+            "libnghttp2-14@1.43.0-1ubuntu0.1",
+            "libpsl5@0.21.0-1.2build2",
+            "librtmp1@2.4+20151223.gitfa8646d.1-2build4",
+            "libssh-4@0.9.6-2ubuntu0.22.04.3",
+            "libssl3@3.0.2-0ubuntu1.13",
+            "libzstd1@1.4.8+dfsg-3build1",
+            "zlib1g@1:1.2.11.dfsg-2ubuntu9.2"
+          ],
+          "scope": "runtime"
+        },
+        "libdb5.3": {
+          "package_url": "pkg:deb/ubuntu/libdb5.3@5.3.28%2Bdfsg1-0.8ubuntu3?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libdebconfclient0": {
+          "package_url": "pkg:deb/ubuntu/libdebconfclient0@0.261ubuntu1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libexpat1": {
+          "package_url": "pkg:deb/ubuntu/libexpat1@2.4.7-1ubuntu0.2?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libext2fs2": {
+          "package_url": "pkg:deb/ubuntu/libext2fs2@1.46.5-2ubuntu1.1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libffi8": {
+          "package_url": "pkg:deb/ubuntu/libffi8@3.4.2-4?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libfontconfig1": {
+          "package_url": "pkg:deb/ubuntu/libfontconfig1@2.13.1-4.2ubuntu5?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "fontconfig-config@2.13.1-4.2ubuntu5",
+            "libc6@2.35-0ubuntu3.6",
+            "libexpat1@2.4.7-1ubuntu0.2",
+            "libfreetype6@2.11.1+dfsg-1ubuntu0.2",
+            "libuuid1@2.37.2-4ubuntu3"
+          ],
+          "scope": "runtime"
+        },
+        "libfreetype6": {
+          "package_url": "pkg:deb/ubuntu/libfreetype6@2.11.1%2Bdfsg-1ubuntu0.2?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libbrotli1@1.0.9-2build6",
+            "libc6@2.35-0ubuntu3.6",
+            "libpng16-16@1.6.37-3build5",
+            "zlib1g@1:1.2.11.dfsg-2ubuntu9.2"
+          ],
+          "scope": "runtime"
+        },
+        "libgcc-s1": {
+          "package_url": "pkg:deb/ubuntu/libgcc-s1@12.3.0-1ubuntu1~22.04?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "gcc-12-base@12.3.0-1ubuntu1~22.04",
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libgcrypt20": {
+          "package_url": "pkg:deb/ubuntu/libgcrypt20@1.9.4-3ubuntu3?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libgpg-error0@1.43-3"
+          ],
+          "scope": "runtime"
+        },
+        "libgmp10": {
+          "package_url": "pkg:deb/ubuntu/libgmp10@6.2.1%2Bdfsg-3ubuntu1?arch=amd64\u0026distro=ubuntu-22.04\u0026epoch=2",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libgnutls30": {
+          "package_url": "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.4?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libgmp10@2:6.2.1+dfsg-3ubuntu1",
+            "libhogweed6@3.7.3-1build2",
+            "libidn2-0@2.3.2-2build1",
+            "libnettle8@3.7.3-1build2",
+            "libp11-kit0@0.24.0-6build1",
+            "libtasn1-6@4.18.0-4build1",
+            "libunistring2@1.0-1"
+          ],
+          "scope": "runtime"
+        },
+        "libgpg-error0": {
+          "package_url": "pkg:deb/ubuntu/libgpg-error0@1.43-3?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libgssapi-krb5-2": {
+          "package_url": "pkg:deb/ubuntu/libgssapi-krb5-2@1.19.2-2ubuntu0.3?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libcom-err2@1.46.5-2ubuntu1.1",
+            "libk5crypto3@1.19.2-2ubuntu0.3",
+            "libkrb5-3@1.19.2-2ubuntu0.3",
+            "libkrb5support0@1.19.2-2ubuntu0.3"
+          ],
+          "scope": "runtime"
+        },
+        "libhogweed6": {
+          "package_url": "pkg:deb/ubuntu/libhogweed6@3.7.3-1build2?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libgmp10@2:6.2.1+dfsg-3ubuntu1",
+            "libnettle8@3.7.3-1build2"
+          ],
+          "scope": "runtime"
+        },
+        "libidn2-0": {
+          "package_url": "pkg:deb/ubuntu/libidn2-0@2.3.2-2build1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libunistring2@1.0-1"
+          ],
+          "scope": "runtime"
+        },
+        "libk5crypto3": {
+          "package_url": "pkg:deb/ubuntu/libk5crypto3@1.19.2-2ubuntu0.3?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libkrb5support0@1.19.2-2ubuntu0.3"
+          ],
+          "scope": "runtime"
+        },
+        "libkeyutils1": {
+          "package_url": "pkg:deb/ubuntu/libkeyutils1@1.6.1-2ubuntu3?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libkrb5-3": {
+          "package_url": "pkg:deb/ubuntu/libkrb5-3@1.19.2-2ubuntu0.3?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libcom-err2@1.46.5-2ubuntu1.1",
+            "libk5crypto3@1.19.2-2ubuntu0.3",
+            "libkeyutils1@1.6.1-2ubuntu3",
+            "libkrb5support0@1.19.2-2ubuntu0.3",
+            "libssl3@3.0.2-0ubuntu1.13"
+          ],
+          "scope": "runtime"
+        },
+        "libkrb5support0": {
+          "package_url": "pkg:deb/ubuntu/libkrb5support0@1.19.2-2ubuntu0.3?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libldap-2.5-0": {
+          "package_url": "pkg:deb/ubuntu/libldap-2.5-0@2.5.16%2Bdfsg-0ubuntu0.22.04.2?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libgnutls30@3.7.3-4ubuntu1.4",
+            "libsasl2-2@2.1.27+dfsg2-3ubuntu1.2"
+          ],
+          "scope": "runtime"
+        },
+        "liblz4-1": {
+          "package_url": "pkg:deb/ubuntu/liblz4-1@1.9.3-2build2?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "liblzma5": {
+          "package_url": "pkg:deb/ubuntu/liblzma5@5.2.5-2ubuntu1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libmount1": {
+          "package_url": "pkg:deb/ubuntu/libmount1@2.37.2-4ubuntu3?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libblkid1@2.37.2-4ubuntu3",
+            "libc6@2.35-0ubuntu3.6",
+            "libselinux1@3.3-1build2"
+          ],
+          "scope": "runtime"
+        },
+        "libncurses6": {
+          "package_url": "pkg:deb/ubuntu/libncurses6@6.3-2ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libtinfo6@6.3-2ubuntu0.1"
+          ],
+          "scope": "runtime"
+        },
+        "libncursesw6": {
+          "package_url": "pkg:deb/ubuntu/libncursesw6@6.3-2ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libtinfo6@6.3-2ubuntu0.1"
+          ],
+          "scope": "runtime"
+        },
+        "libnettle8": {
+          "package_url": "pkg:deb/ubuntu/libnettle8@3.7.3-1build2?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libnghttp2-14": {
+          "package_url": "pkg:deb/ubuntu/libnghttp2-14@1.43.0-1ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libnsl2": {
+          "package_url": "pkg:deb/ubuntu/libnsl2@1.3.0-2build2?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libtirpc3@1.3.2-2ubuntu0.1"
+          ],
+          "scope": "runtime"
+        },
+        "libp11-kit0": {
+          "package_url": "pkg:deb/ubuntu/libp11-kit0@0.24.0-6build1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libffi8@3.4.2-4"
+          ],
+          "scope": "runtime"
+        },
+        "libpam-modules": {
+          "package_url": "pkg:deb/ubuntu/libpam-modules@1.4.0-11ubuntu2.4?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "libpam-modules-bin": {
+          "package_url": "pkg:deb/ubuntu/libpam-modules-bin@1.4.0-11ubuntu2.4?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libaudit1@1:3.0.7-1build1",
+            "libc6@2.35-0ubuntu3.6",
+            "libcrypt1@1:4.4.27-1",
+            "libpam0g@1.4.0-11ubuntu2.4",
+            "libselinux1@3.3-1build2"
+          ],
+          "scope": "runtime"
+        },
+        "libpam-runtime": {
+          "package_url": "pkg:deb/ubuntu/libpam-runtime@1.4.0-11ubuntu2.4?arch=all\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "debconf@1.5.79ubuntu1",
+            "libpam-modules@1.4.0-11ubuntu2.4"
+          ],
+          "scope": "runtime"
+        },
+        "libpam0g": {
+          "package_url": "pkg:deb/ubuntu/libpam0g@1.4.0-11ubuntu2.4?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "debconf@1.5.79ubuntu1",
+            "libaudit1@1:3.0.7-1build1",
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libpcre2-8-0": {
+          "package_url": "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libpcre3": {
+          "package_url": "pkg:deb/ubuntu/libpcre3@8.39-13ubuntu0.22.04.1?arch=amd64\u0026distro=ubuntu-22.04\u0026epoch=2",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libpng16-16": {
+          "package_url": "pkg:deb/ubuntu/libpng16-16@1.6.37-3build5?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "zlib1g@1:1.2.11.dfsg-2ubuntu9.2"
+          ],
+          "scope": "runtime"
+        },
+        "libprocps8": {
+          "package_url": "pkg:deb/ubuntu/libprocps8@3.3.17-6ubuntu2.1?arch=amd64\u0026distro=ubuntu-22.04\u0026epoch=2",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libsystemd0@249.11-0ubuntu3.12"
+          ],
+          "scope": "runtime"
+        },
+        "libpsl5": {
+          "package_url": "pkg:deb/ubuntu/libpsl5@0.21.0-1.2build2?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libidn2-0@2.3.2-2build1",
+            "libunistring2@1.0-1"
+          ],
+          "scope": "runtime"
+        },
+        "librtmp1": {
+          "package_url": "pkg:deb/ubuntu/librtmp1@2.4%2B20151223.gitfa8646d.1-2build4?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libgmp10@2:6.2.1+dfsg-3ubuntu1",
+            "libgnutls30@3.7.3-4ubuntu1.4",
+            "libhogweed6@3.7.3-1build2",
+            "libnettle8@3.7.3-1build2",
+            "zlib1g@1:1.2.11.dfsg-2ubuntu9.2"
+          ],
+          "scope": "runtime"
+        },
+        "libsasl2-2": {
+          "package_url": "pkg:deb/ubuntu/libsasl2-2@2.1.27%2Bdfsg2-3ubuntu1.2?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libsasl2-modules-db@2.1.27+dfsg2-3ubuntu1.2"
+          ],
+          "scope": "runtime"
+        },
+        "libsasl2-modules-db": {
+          "package_url": "pkg:deb/ubuntu/libsasl2-modules-db@2.1.27%2Bdfsg2-3ubuntu1.2?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libdb5.3@5.3.28+dfsg1-0.8ubuntu3"
+          ],
+          "scope": "runtime"
+        },
+        "libseccomp2": {
+          "package_url": "pkg:deb/ubuntu/libseccomp2@2.5.3-2ubuntu2?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libselinux1": {
+          "package_url": "pkg:deb/ubuntu/libselinux1@3.3-1build2?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libpcre2-8-0@10.39-3ubuntu0.1"
+          ],
+          "scope": "runtime"
+        },
+        "libsemanage-common": {
+          "package_url": "pkg:deb/ubuntu/libsemanage-common@3.3-1build2?arch=all\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "libsemanage2": {
+          "package_url": "pkg:deb/ubuntu/libsemanage2@3.3-1build2?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libaudit1@1:3.0.7-1build1",
+            "libbz2-1.0@1.0.8-5build1",
+            "libc6@2.35-0ubuntu3.6",
+            "libselinux1@3.3-1build2",
+            "libsemanage-common@3.3-1build2",
+            "libsepol2@3.3-1build1"
+          ],
+          "scope": "runtime"
+        },
+        "libsepol2": {
+          "package_url": "pkg:deb/ubuntu/libsepol2@3.3-1build1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libsmartcols1": {
+          "package_url": "pkg:deb/ubuntu/libsmartcols1@2.37.2-4ubuntu3?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libss2": {
+          "package_url": "pkg:deb/ubuntu/libss2@1.46.5-2ubuntu1.1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libcom-err2@1.46.5-2ubuntu1.1"
+          ],
+          "scope": "runtime"
+        },
+        "libssh-4": {
+          "package_url": "pkg:deb/ubuntu/libssh-4@0.9.6-2ubuntu0.22.04.3?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libgssapi-krb5-2@1.19.2-2ubuntu0.3",
+            "libssl3@3.0.2-0ubuntu1.13",
+            "zlib1g@1:1.2.11.dfsg-2ubuntu9.2"
+          ],
+          "scope": "runtime"
+        },
+        "libssl3": {
+          "package_url": "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.13?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "debconf@1.5.79ubuntu1",
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libstdc++6": {
+          "package_url": "pkg:deb/ubuntu/libstdc%2B%2B6@12.3.0-1ubuntu1~22.04?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "gcc-12-base@12.3.0-1ubuntu1~22.04",
+            "libc6@2.35-0ubuntu3.6",
+            "libgcc-s1@12.3.0-1ubuntu1~22.04"
+          ],
+          "scope": "runtime"
+        },
+        "libsystemd0": {
+          "package_url": "pkg:deb/ubuntu/libsystemd0@249.11-0ubuntu3.12?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "libtasn1-6": {
+          "package_url": "pkg:deb/ubuntu/libtasn1-6@4.18.0-4build1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libtinfo6": {
+          "package_url": "pkg:deb/ubuntu/libtinfo6@6.3-2ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libtirpc-common": {
+          "package_url": "pkg:deb/ubuntu/libtirpc-common@1.3.2-2ubuntu0.1?arch=all\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "libtirpc3": {
+          "package_url": "pkg:deb/ubuntu/libtirpc3@1.3.2-2ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libgssapi-krb5-2@1.19.2-2ubuntu0.3",
+            "libtirpc-common@1.3.2-2ubuntu0.1"
+          ],
+          "scope": "runtime"
+        },
+        "libudev1": {
+          "package_url": "pkg:deb/ubuntu/libudev1@249.11-0ubuntu3.12?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libunistring2": {
+          "package_url": "pkg:deb/ubuntu/libunistring2@1.0-1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libuuid1": {
+          "package_url": "pkg:deb/ubuntu/libuuid1@2.37.2-4ubuntu3?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libxxhash0": {
+          "package_url": "pkg:deb/ubuntu/libxxhash0@0.8.1-1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "libzstd1": {
+          "package_url": "pkg:deb/ubuntu/libzstd1@1.4.8%2Bdfsg-3build1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "locales": {
+          "package_url": "pkg:deb/ubuntu/locales@2.35-0ubuntu3.6?arch=all\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "debconf@1.5.79ubuntu1",
+            "libc-bin@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "login": {
+          "package_url": "pkg:deb/ubuntu/login@4.8.1-2ubuntu2.1?arch=amd64\u0026distro=ubuntu-22.04\u0026epoch=1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "logsave": {
+          "package_url": "pkg:deb/ubuntu/logsave@1.46.5-2ubuntu1.1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "lsb-base": {
+          "package_url": "pkg:deb/ubuntu/lsb-base@11.1.0ubuntu4?arch=all\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "mawk": {
+          "package_url": "pkg:deb/ubuntu/mawk@1.3.4.20200120-3?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        },
+        "mount": {
+          "package_url": "pkg:deb/ubuntu/mount@2.37.2-4ubuntu3?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "ncurses-base": {
+          "package_url": "pkg:deb/ubuntu/ncurses-base@6.3-2ubuntu0.1?arch=all\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "ncurses-bin": {
+          "package_url": "pkg:deb/ubuntu/ncurses-bin@6.3-2ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "openssl": {
+          "package_url": "pkg:deb/ubuntu/openssl@3.0.2-0ubuntu1.13?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libssl3@3.0.2-0ubuntu1.13"
+          ],
+          "scope": "runtime"
+        },
+        "p11-kit": {
+          "package_url": "pkg:deb/ubuntu/p11-kit@0.24.0-6build1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libp11-kit0@0.24.0-6build1",
+            "libtasn1-6@4.18.0-4build1",
+            "p11-kit-modules@0.24.0-6build1"
+          ],
+          "scope": "runtime"
+        },
+        "p11-kit-modules": {
+          "package_url": "pkg:deb/ubuntu/p11-kit-modules@0.24.0-6build1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libffi8@3.4.2-4",
+            "libp11-kit0@0.24.0-6build1",
+            "libtasn1-6@4.18.0-4build1"
+          ],
+          "scope": "runtime"
+        },
+        "passwd": {
+          "package_url": "pkg:deb/ubuntu/passwd@4.8.1-2ubuntu2.1?arch=amd64\u0026distro=ubuntu-22.04\u0026epoch=1",
+          "relationship": "direct",
+          "dependencies": [
+            "libaudit1@1:3.0.7-1build1",
+            "libc6@2.35-0ubuntu3.6",
+            "libcrypt1@1:4.4.27-1",
+            "libpam-modules@1.4.0-11ubuntu2.4",
+            "libpam0g@1.4.0-11ubuntu2.4",
+            "libselinux1@3.3-1build2",
+            "libsemanage2@3.3-1build2"
+          ],
+          "scope": "runtime"
+        },
+        "perl-base": {
+          "package_url": "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.3?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "procps": {
+          "package_url": "pkg:deb/ubuntu/procps@3.3.17-6ubuntu2.1?arch=amd64\u0026distro=ubuntu-22.04\u0026epoch=2",
+          "relationship": "direct",
+          "dependencies": [
+            "init-system-helpers@1.62",
+            "libc6@2.35-0ubuntu3.6",
+            "libncurses6@6.3-2ubuntu0.1",
+            "libncursesw6@6.3-2ubuntu0.1",
+            "libprocps8@2:3.3.17-6ubuntu2.1",
+            "libtinfo6@6.3-2ubuntu0.1",
+            "lsb-base@11.1.0ubuntu4"
+          ],
+          "scope": "runtime"
+        },
+        "sed": {
+          "package_url": "pkg:deb/ubuntu/sed@4.8-1ubuntu2?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "sensible-utils": {
+          "package_url": "pkg:deb/ubuntu/sensible-utils@0.0.17?arch=all\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "sysvinit-utils": {
+          "package_url": "pkg:deb/ubuntu/sysvinit-utils@3.01-1ubuntu1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "lsb-base@11.1.0ubuntu4"
+          ],
+          "scope": "runtime"
+        },
+        "tar": {
+          "package_url": "pkg:deb/ubuntu/tar@1.34%2Bdfsg-1ubuntu0.1.22.04.2?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "tzdata": {
+          "package_url": "pkg:deb/ubuntu/tzdata@2023d-0ubuntu0.22.04?arch=all\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "debconf@1.5.79ubuntu1"
+          ],
+          "scope": "runtime"
+        },
+        "ubuntu-keyring": {
+          "package_url": "pkg:deb/ubuntu/ubuntu-keyring@2021.03.26?arch=all\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "ucf": {
+          "package_url": "pkg:deb/ubuntu/ucf@3.0043?arch=all\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "coreutils@8.32-4.1ubuntu1",
+            "debconf@1.5.79ubuntu1",
+            "sensible-utils@0.0.17"
+          ],
+          "scope": "runtime"
+        },
+        "usrmerge": {
+          "package_url": "pkg:deb/ubuntu/usrmerge@25ubuntu2?arch=all\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "perl-base@5.34.0-3ubuntu1.3"
+          ],
+          "scope": "runtime"
+        },
+        "util-linux": {
+          "package_url": "pkg:deb/ubuntu/util-linux@2.37.2-4ubuntu3?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "wget": {
+          "package_url": "pkg:deb/ubuntu/wget@1.21.2-2ubuntu1?arch=amd64\u0026distro=ubuntu-22.04",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6",
+            "libidn2-0@2.3.2-2build1",
+            "libpcre2-8-0@10.39-3ubuntu0.1",
+            "libpsl5@0.21.0-1.2build2",
+            "libssl3@3.0.2-0ubuntu1.13",
+            "libuuid1@2.37.2-4ubuntu3",
+            "zlib1g@1:1.2.11.dfsg-2ubuntu9.2"
+          ],
+          "scope": "runtime"
+        },
+        "zlib1g": {
+          "package_url": "pkg:deb/ubuntu/zlib1g@1.2.11.dfsg-2ubuntu9.2?arch=amd64\u0026distro=ubuntu-22.04\u0026epoch=1",
+          "relationship": "direct",
+          "dependencies": [
+            "libc6@2.35-0ubuntu3.6"
+          ],
+          "scope": "runtime"
+        }
+      }
+    }
+  }
+}
