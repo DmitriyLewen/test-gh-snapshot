@@ -1,4 +1,4 @@
-name: Canary build
+name: Upload Github submissions
 on:
   workflow_dispatch:
 
