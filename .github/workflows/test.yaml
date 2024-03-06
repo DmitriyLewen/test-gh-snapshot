@@ -1,0 +1,25 @@
+---
+name: Trivy Java DB
+on:
+  schedule:
+    - cron: "0 0 * * *" # update indexes every day in 00:00
+  workflow_dispatch:
+env:
+  GH_USER: aqua-bot
+  DB_VERSION: 1
+permissions:
+  packages: write # for GHCR
+  contents: read
+jobs:
+  build:
+    name: Build DB
+    runs-on: ubuntu-latest
+    steps:
+      - name: GH repo to lower case # `oras push` fails if repository contains uppercase characters
+        id: github-repo-lower-case
+        uses: ASzc/change-string-case-action@v6
+        with:
+          string: ${{ github.repository }}
+
+      - name: Check repo name
+        run: echo ${{ steps.string.outputs.lowercase }}
