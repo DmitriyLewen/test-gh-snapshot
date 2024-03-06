@@ -22,4 +22,4 @@ jobs:
           string: ${{ github.repository }}
 
       - name: Check repo name
-        run: echo ${{ steps.string.outputs.lowercase }}
+        run: echo ${{ steps.github-repo-lower-case.outputs.lowercase }}
