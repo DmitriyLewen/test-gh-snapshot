@@ -17,9 +17,8 @@ jobs:
     steps:
       - name: GH repo to lower case # `oras push` fails if repository contains uppercase characters
         id: github-repo-lower-case
-        uses: ASzc/change-string-case-action@v6
-        with:
-          string: ${{ github.repository }}
+        run: |
+          echo "lowercase_repo=$(echo "${{ github.repository }}" | tr '[:upper:]' '[:lower:]')" >> $GITHUB_OUTPUT
 
       - name: Check repo name
-        run: echo ${{ steps.github-repo-lower-case.outputs.lowercase }}
+        run: echo ${{ steps.github-repo-lower-case.outputs.lowercase_repo }}
