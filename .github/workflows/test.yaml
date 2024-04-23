@@ -17,5 +17,5 @@ jobs:
     steps:
       - name: Check repo name
         run: |
-          lowercase_repo=$(echo "${{ github.repository }}" | tr '[:upper:]' '[:lower:]')"
+          lowercase_repo=$(echo "${{ github.repository }}" | tr '[:upper:]' '[:lower:]')
           echo ${lowercase_repo}
