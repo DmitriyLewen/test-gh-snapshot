@@ -15,10 +15,7 @@ jobs:
     name: Build DB
     runs-on: ubuntu-latest
     steps:
-      - name: GH repo to lower case # `oras push` fails if repository contains uppercase characters
-        id: github-repo-lower-case
-        run: |
-          echo "lowercase_repo=$(echo "${{ github.repository }}" | tr '[:upper:]' '[:lower:]')" >> $GITHUB_OUTPUT
-
       - name: Check repo name
-        run: echo ${{ steps.github-repo-lower-case.outputs.lowercase_repo }}
+        run: |
+          lowercase_repo=$(echo "${{ github.repository }}" | tr '[:upper:]' '[:lower:]')"
+          echo ${{ steps.github-repo-lower-case.outputs.lowercase_repo }}
